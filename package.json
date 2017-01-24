@@ -1,0 +1,21 @@
+{
+  "name": "id:16",
+  "version": "1.0.0",
+  "description": "Create random id's and numbers in base 16!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "random",
+    "number",
+    "id",
+    "hex",
+    "hexadecimal",
+    "id-16",
+    "id-generator",
+    "random-id"
+  ],
+  "author": "Jesse van der Pluijm",
+  "license": "MIT"
+}
