@@ -6,10 +6,10 @@
    Create random id's and numbers in base 16!
 </p>
 
-## Intro
+# Intro
 Use the simple function to quickly generate a random base 16 ([hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal)) number or create a generator and then use it to create loads of random numbers of the same length which are checked for collisions. This is useful for creating unique ID's and whatnot.
 
-## Basic usage
+# Basic usage
 Create a random hex number:
 ```js
 var id_16 = require('id-16')
@@ -25,10 +25,10 @@ user_1 = id()
 user_2 = id()
 ```
 
-## Documentation
+# Documentation
 All the current fucntions doccumented, any comments? [Open an issue](/issues) or [submit a pullrequest](/pulls)!
 
-### id_16([length])
+## id_16([length])
 This function creates a random number in base 16.
 **Returns**: A number in base 16.
 
@@ -36,7 +36,7 @@ This function creates a random number in base 16.
 | --- | --- | ---| 
 | lenght | `Number` optional | The desired length of the return number.  *(Default: 8)* |
 
-### id_16.generator([length, expandby])
+## id_16.generator([length, expandby])
 This function returns a function that creates random base 16 numbers. This generator checks the numbers for collisions. If too many collisions occur an error is thrown or (if expandby is defined) the length of the number is expanded. 
 **returns**: The generator
 
@@ -47,12 +47,12 @@ This function returns a function that creates random base 16 numbers. This gener
 
 
 This generator also has some properties and methods: 
-#### generator.remove(number)
+### generator.remove(number)
 Removes a number from the list of numbers that have been created by this generator, allowing the number to be created again.
 
 | param | type | description | 
 | --- | --- | ---| 
 | number | `Number` | The number that you want to delete from the list of already 'used' numbers by **this** generator. |
 
-#### generator.list
+### generator.list
 An array containing all the numbers that have been created by **this** generator. It's used to check for collisions by the generator itself but it is open to interact with.
