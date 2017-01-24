@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/id-16.png" alt="Magister Tools Logo">
+  <img src="assets/id-16.png" alt="id-16 logo">
   <br/><br/>
 </p>
 <p align="center">
@@ -32,27 +32,33 @@ All the current fucntions doccumented, any comments? [Open an issue](/issues) or
 This function creates a random number in base 16.
 **Returns**: A number in base 16.
 
-| param | type | description | 
-| --- | --- | ---| 
+| param | type | description |
+| --- | --- | ---|
 | lenght | `Number` optional | The desired length of the return number.  *(Default: 8)* |
 
 ## id_16.generator([length, expandby])
-This function returns a function that creates random base 16 numbers. This generator checks the numbers for collisions. If too many collisions occur an error is thrown or (if expandby is defined) the length of the number is expanded. 
+This function returns a function that creates random base 16 numbers. This generator checks the numbers for collisions. If too many collisions occur an error is thrown or (if expandby is defined) the length of the number is expanded.
 **returns**: The generator
 
-| param | type | description | 
-| --- | --- | ---| 
+| param | type | description |
+| --- | --- | ---|
 | lenght | `Number` optional | The desired length of the return number.  *(Default: 8)* |
-| expandby | `Number` optional | Expand the length of the return number by this number if too many collisions occur.| 
+| expandby | `Number` optional | Expand the length of the return number by this number if too many collisions occur.|
 
 
-This generator also has some properties and methods: 
+This generator also has some properties and methods:
 ### generator.remove(number)
 Removes a number from the list of numbers that have been created by this generator, allowing the number to be created again.
 
-| param | type | description | 
-| --- | --- | ---| 
+| param | type | description |
+| --- | --- | ---|
 | number | `Number` | The number that you want to delete from the list of already 'used' numbers by **this** generator. |
 
 ### generator.list
 An array containing all the numbers that have been created by **this** generator. It's used to check for collisions by the generator itself but it is open to interact with.
+
+
+# License & Disclaimer
+This module is open-sourced under the MIT Licence (see [LICENSE](LICENSE) for the full license). So within some limits, you can do with the code whatever you want.
+
+The software is provided as is. It might work as expected - or not. Just don't blame me.
