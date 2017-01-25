@@ -21,12 +21,12 @@ Create a generator and use it:
 ```js
 var id_16 = require('id-16')
 var id = id_16.generator(4)
-user_1 = id()
-user_2 = id()
+user_1 = id() // -> 63f4
+user_2 = id() // -> b6ab
 ```
 
 # Documentation
-All the current fucntions doccumented, any comments? [Open an issue](/issues) or [submit a pullrequest](/pulls)!
+All the current functions are doccumentet. If you have any comments or suggestions please go [here](#suggestions).
 
 ## id_16([length])
 This function creates a random number in base 16.
@@ -57,6 +57,8 @@ Removes a number from the list of numbers that have been created by this generat
 ### generator.list
 An array containing all the numbers that have been created by **this** generator. It's used to check for collisions by the generator itself but it is open to interact with.
 
+## Suggestions
+If you have any suggestions or want something to be implemented please [submit an issue](/issues) or [open a pull request](/pulls)! 
 
 # License & Disclaimer
 This module is open-sourced under the MIT Licence (see [LICENSE](LICENSE) for the full license). So within some limits, you can do with the code whatever you want.
