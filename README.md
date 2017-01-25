@@ -57,7 +57,27 @@ Removes a number from the list of numbers that have been created by this generat
 ### generator.list
 An array containing all the numbers that have been created by **this** generator. It's used to check for collisions by the generator itself but it is open to interact with.
 
-## Suggestions
+# creation of random numbers
+The program currently uses the following function to generate the numbers: 
+```js
+var random_number = Math.floor(Math.random() * 16)
+```
+This creates a number between 0 and 15 after which the number is then converted into base 16. This process is then repeated for the desired length of the number and the numbers are added onto a string. This string is what's returned by the function. 
+
+### Is it truly random? 
+Many people state that `Math.random()` is not truly random. I'm not going to debate weather or not this is true however I am goign to show you the results I got.
+
+I runned the function in a loop creating 1000 random numbers between 0 and 15, the following graph shows just how many times each number was returned by the function: 
+
+<p align="center">
+  <img src="assets/graph.png" alt="graph">
+  <br/><br/>
+</p>
+
+As you can see the numbers are all created about as many times. I think it's good enough for this purpose but I'm open to any suggestions! So please let me know if you think you've got a better way of creating truly random numbers.
+
+
+# Suggestions
 If you have any suggestions or want something to be implemented please [submit an issue](/issues) or [open a pull request](/pulls)! 
 
 # License & Disclaimer
