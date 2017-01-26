@@ -1,3 +1,12 @@
+/**
+ * ID:16 v1.0.2
+ * (https://git.io/id-16)
+ *
+ * Copyright (c) 2017 - Jesse van der Pluijm (https://github.com/jessevdp)
+ * Licensed under MIT (https://git.io/id-16-license)
+ *
+ * Create random id's and numbers in base 16!
+ */
 
 var id = module.exports = function (length) {
   length = length || 8
