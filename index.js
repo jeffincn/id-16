@@ -10,27 +10,25 @@
 
 var id = module.exports = function (length) {
   length = length || 8
-  var return_val = ""
+  var returnVal = ''
 
   for (var i = 0; i < length; i++) {
     /* Random number between 0 - 15 */
     var num = Math.floor(Math.random() * 16)
-    var hex_num = num.toString(16)
-    return_val += hex_num
+    var hexNum = num.toString(16)
+    returnVal += hexNum
   }
 
-  return return_val
+  return returnVal
 }
 
 id.generator = function (length, expandby) {
-
   var fn = function () {
-
    /**
     * This do {} while statement keeps creating random number until it finds
     * a unique one or the counter reaches 10.
     */
-    var counter = 0;
+    var counter = 0
     do {
       // Maximum amount of retries
       if (counter++ > 10) {
@@ -39,7 +37,6 @@ id.generator = function (length, expandby) {
       }
       // Create a random number
       var rand = id(length)
-
     } while (fn.list.indexOf(rand) > -1)
 
     // add this id to the list of id's generated
@@ -57,5 +54,5 @@ id.generator = function (length, expandby) {
     }
   }
 
-  return fn;
+  return fn
 }
