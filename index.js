@@ -9,7 +9,7 @@
  */
 
 var id = module.exports = function (length) {
-  length = length || 8
+  length = length || 8;
   var returnVal = ''
 
   for (var i = 0; i < length; i++) {
