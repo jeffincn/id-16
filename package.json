@@ -4,7 +4,7 @@
   "description": "Create random id's and numbers in base 16!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "test/travis-ci.sh"
   },
   "keywords": [
     "random",
@@ -20,5 +20,8 @@
   "homepage": "https://git.io/id-16",
   "repository": "https://git.io/id-16",
   "bugs": "https://github.com/jessevdp/id-16/issues",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^8.6.0"
+  }
 }
