@@ -1,6 +1,6 @@
 {
   "name": "id-16",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Create random id's and numbers in base 16!",
   "main": "index.js",
   "scripts": {
