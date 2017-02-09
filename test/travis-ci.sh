@@ -9,7 +9,7 @@ echo '  [✓] Finished code style checks.'
 
 # install vows
 echo '  [*] installing vows (http://vowsjs.org/)..'
-npm install -g vows
+#npm install -g vows
 echo '  [✓] vows installed.'
 
 # Run our test file
