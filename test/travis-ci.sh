@@ -4,7 +4,7 @@ pwd
 
 # Run StandardJS.
 echo '  [*] Running StandardJS (http://standardjs.com)..'
-standard index.js
+standard
 echo '  [✓] Finished code style checks.'
 
 # install vows
