@@ -22,6 +22,7 @@
   "bugs": "https://github.com/jessevdp/id-16/issues",
   "license": "MIT",
   "devDependencies": {
-    "standard": "^8.6.0"
+    "standard": "^8.6.0",
+    "vows": "^0.8.1"
   }
 }
