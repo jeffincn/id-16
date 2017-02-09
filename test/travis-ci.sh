@@ -14,5 +14,5 @@ echo '  [✓] vows installed.'
 
 # Run our test file
 echo '  [*] Running our tests (./tests/test.js)'
-vows ./test/test.js
-echo '[✓] Test completed.'
+vows ./test/test.js --spec
+echo '  [✓] Test completed.'
