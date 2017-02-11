@@ -6,6 +6,7 @@
    Create random id's and numbers in base 16!
 </p>
 [![Build Status](https://travis-ci.org/jessevdp/id-16.svg?branch=master)](https://travis-ci.org/jessevdp/id-16)
+[![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 # Intro
 Use the simple function to quickly generate a random base 16 ([hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal)) number or create a generator and then use it to create loads of random numbers of the same length which are checked for collisions. This is useful for creating unique ID's and whatnot.
